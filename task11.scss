@@ -1,0 +1,83 @@
+$themecolor : rgb(95,192,205);
+$whitecolor : #ffffff;
+$bkgcolor : rgb(239,240,244);
+%bkg-font{
+    background-color: $themecolor;
+    color: $whitecolor;
+    padding: 2vh 3vw;
+    text-align: center;
+}
+@mixin font-style( $font-style){
+    font-size: $font-style;
+    line-height: $font-style;
+}
+@mixin cont-img($cont-img){
+    width: 16vw;
+    height: 8vh;
+    background: url($cont-img) no-repeat center;
+}
+%cont{
+    width: 100%;
+    background-color: $whitecolor;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+}
+.header-box{
+    width: 100vw;
+    @extend %bkg-font;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    & > .header-log{
+        @include font-style(2.5vh);
+    }
+    @include font-style(2vh);
+}
+.cont-box{
+    width: 100vw;
+    height: 100vh;
+    padding-top: 1vh;
+    background-color: $bkgcolor;
+}
+body{
+    overflow-y: hidden;
+}
+.cont1{
+    @extend %cont;
+    margin-top: 1vh;
+}
+.cont2{
+    @extend %cont;
+    margin-top: 2vh;
+}
+.cont1-img{
+    @include cont-img("images/tel_1x.png");
+}
+.cont2-img{
+    @include cont-img("images/paw_1x.png");
+}
+.cont1-input,.cont2-input{
+    height: 4vh;
+    width: 80vw;
+    margin-top: 2vh;
+    border-left: thin solid $bkgcolor;
+    border-top: none;
+    border-right: none;
+    border-bottom: none;
+    color: $bkgcolor;
+    font-weight: 200;
+    text-indent: 2vw;
+}
+.footer-btn{
+    width: 100vw;
+    border: none;
+    @extend %bkg-font;
+    margin-top: 6vh;
+    height: 6vh;
+}
+.footer-text{
+    float: right;
+    color: $themecolor;
+    padding: 2vw;
+}

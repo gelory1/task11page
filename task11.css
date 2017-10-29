@@ -1,0 +1,73 @@
+.header-box, .footer-btn {
+  background-color: #5fc0cd;
+  color: #ffffff;
+  padding: 2vh 3vw;
+  text-align: center; }
+
+.cont1, .cont2 {
+  width: 100%;
+  background-color: #ffffff;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start; }
+
+.header-box {
+  width: 100vw;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  font-size: 2vh;
+  line-height: 2vh; }
+  .header-box > .header-log {
+    font-size: 2.5vh;
+    line-height: 2.5vh; }
+
+.cont-box {
+  width: 100vw;
+  height: 100vh;
+  padding-top: 1vh;
+  background-color: #eff0f4; }
+
+body {
+  overflow-y: hidden; }
+
+.cont1 {
+  margin-top: 1vh; }
+
+.cont2 {
+  margin-top: 2vh; }
+
+.cont1-img {
+  width: 16vw;
+  height: 8vh;
+  background: url("images/tel_1x.png") no-repeat center; }
+
+.cont2-img {
+  width: 16vw;
+  height: 8vh;
+  background: url("images/paw_1x.png") no-repeat center; }
+
+.cont1-input, .cont2-input {
+  height: 4vh;
+  width: 80vw;
+  margin-top: 2vh;
+  border-left: thin solid #eff0f4;
+  border-top: none;
+  border-right: none;
+  border-bottom: none;
+  color: #eff0f4;
+  font-weight: 200;
+  text-indent: 2vw; }
+
+.footer-btn {
+  width: 100vw;
+  border: none;
+  margin-top: 6vh;
+  height: 6vh; }
+
+.footer-text {
+  float: right;
+  color: #5fc0cd;
+  padding: 2vw; }
+
+/*# sourceMappingURL=task11.css.map */
